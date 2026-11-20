@@ -279,7 +279,7 @@ function meetingHTML(){
   return h;
 }
 function meetNext(){S.fin=(S.fin===0?1:S.fin===2?3:S.fin);S.f1msg=null;save();renderApp()}
-function final1(i){if(i===DATA.FINAL1.correct){S.fin=2;S.f1msg=null;S.envSeen=true}else{S.f1msg='Нет. Подумайте: кто держал повторный опыт и видел помощника своими глазами?'}save();renderApp()}
+function final1(i){if(i===DATA.FINAL1.correct){S.fin=2;S.f1msg=null;S.envSeen=true}else{S.f1msg='Нет. Подумайте: кто делал повторный опыт и видел помощника своими глазами?'}save();renderApp()}
 function chooseCulprit(n){
   if(n==='Лапин Витя'){S.fin=4;S.f2msg=null}
   else{S.f2msg='ВЕРОЯТНОСТЬ НИЗКА. '+DATA.WRONG_HINT}
